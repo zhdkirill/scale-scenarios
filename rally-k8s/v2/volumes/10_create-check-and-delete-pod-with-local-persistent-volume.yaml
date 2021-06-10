@@ -35,6 +35,7 @@ subtasks:
     namespaces:
       count: 3
       with_serviceaccount: true
+      serviceaccount_delay: 5
     local_storageclass: {}
     kubernetes.cfg:
       prepoll_delay: 1
@@ -73,6 +74,7 @@ subtasks:
     namespaces:
       count: 3
       with_serviceaccount: true
+      serviceaccount_delay: 5
     local_storageclass: {}
     kubernetes.cfg:
       prepoll_delay: 1
