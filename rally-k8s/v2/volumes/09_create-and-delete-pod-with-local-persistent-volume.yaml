@@ -18,7 +18,7 @@ subtasks:
               - key: node-role.kubernetes.io/node
                 operator: Exists
       persistent_volume_claim:
-        size: 250Mi
+        size: 1Gi
         access_modes:
         - ReadWriteOnce
       image: gcr.io/google-samples/hello-go-gke:1.0
