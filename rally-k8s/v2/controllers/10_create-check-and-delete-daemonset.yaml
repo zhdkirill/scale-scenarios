@@ -7,7 +7,7 @@ subtasks:
     Kubernetes.create_check_and_delete_daemonset:
       image: kubernetes/pause
       node_labels:
-        node-role.kubernetes.io/node: "true"
+        rally: "daemonset"
   runner:
     constant:
       concurrency: {{ concurrency if not super_light else super_light_concurrency }}
@@ -18,7 +18,7 @@ subtasks:
       with_serviceaccount: true
       serviceaccount_delay: 5
     kubernetes.cfg:
-      prepoll_delay: 10
+      prepoll_delay: 1
       retries_total: {{ compute * 60 if not super_light else super_light_count * 60 }}
       sleep_time: 1
 - title: Run create/check/delete daemonset with rps runner
@@ -26,7 +26,7 @@ subtasks:
     Kubernetes.create_check_and_delete_daemonset:
       image: kubernetes/pause
       node_labels:
-        node-role.kubernetes.io/node: "true"
+        rally: "daemonset"
   runner:
     rps:
       rps: {{ concurrency if not super_light else super_light_concurrency }}
@@ -37,6 +37,6 @@ subtasks:
       with_serviceaccount: true
       serviceaccount_delay: 5
     kubernetes.cfg:
-      prepoll_delay: 10
+      prepoll_delay: 1
       retries_total: {{ compute * 60 if not super_light else super_light_count * 60 }}
       sleep_time: 1
