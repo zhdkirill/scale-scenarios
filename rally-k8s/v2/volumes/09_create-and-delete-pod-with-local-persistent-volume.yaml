@@ -7,7 +7,7 @@ subtasks:
     Kubernetes.create_and_delete_pod_with_local_persistent_volume:
       persistent_volume:
         size: 1Gi
-        volume_mode: Block
+        volume_mode: Filesystem
         local_path: /var/tmp
         access_modes:
         - ReadWriteOnce
@@ -42,7 +42,7 @@ subtasks:
     Kubernetes.create_and_delete_pod_with_local_persistent_volume:
       persistent_volume:
         size: 1Gi
-        volume_mode: Block
+        volume_mode: Filesystem
         local_path: /var/tmp
         access_modes:
         - ReadWriteOnce
