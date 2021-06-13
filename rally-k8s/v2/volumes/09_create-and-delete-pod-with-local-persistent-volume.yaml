@@ -17,6 +17,10 @@ subtasks:
             - matchExpressions:
               - key: kubernetes.io/os
                 operator: Exists
+              - key: stacklight
+                operator: NotIn
+                values:
+                - enabled
       persistent_volume_claim:
         size: 1Gi
         access_modes:
@@ -52,6 +56,10 @@ subtasks:
             - matchExpressions:
               - key: kubernetes.io/os
                 operator: Exists
+              - key: stacklight
+                operator: NotIn
+                values:
+                - enabled
       persistent_volume_claim:
         size: 250Mi
         access_modes:
