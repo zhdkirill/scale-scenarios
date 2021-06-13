@@ -18,7 +18,7 @@ subtasks:
       with_serviceaccount: true
       serviceaccount_delay: 5
     kubernetes.cfg:
-      prepoll_delay: 1
+      prepoll_delay: 10
       retries_total: {{ compute * 60 if not super_light else super_light_count * 60 }}
       sleep_time: 1
 - title: Run create/check/delete daemonset with rps runner
@@ -37,6 +37,6 @@ subtasks:
       with_serviceaccount: true
       serviceaccount_delay: 5
     kubernetes.cfg:
-      prepoll_delay: 1
+      prepoll_delay: 10
       retries_total: {{ compute * 60 if not super_light else super_light_count * 60 }}
       sleep_time: 1
