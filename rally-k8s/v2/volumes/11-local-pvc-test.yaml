@@ -8,7 +8,7 @@ subtasks:
       persistent_volume:
         size: 100Mi
         volume_mode: Filesystem
-        local_path: /tmp
+        local_path: /tmp/pod
         access_modes:
         - ReadWriteOnce
         node_affinity:
