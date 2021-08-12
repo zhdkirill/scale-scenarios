@@ -1,0 +1,47 @@
+---
+version: 2
+title: Create, read, check and delete pod with local persistent volume
+subtasks:
+- title: Run create/read/check/delete pod with local PVC with rps runner
+  scenario:
+    Kubernetes.create_and_delete_pod_with_local_persistent_volume:
+      persistent_volume:
+        size: 100Mi
+        volume_mode: Filesystem
+        local_path: /tmp
+        access_modes:
+        - ReadWriteOnce
+        node_affinity:
+          required:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/os
+                operator: Exists
+              - key: stacklight
+                operator: NotIn
+                values:
+                - enabled
+      persistent_volume_claim:
+        size: 100Mi
+        access_modes:
+        - ReadWriteOnce
+      image: gcr.io/google-samples/hello-go-gke:1.0
+      mount_path: /opt/check
+      check_cmd:
+      - ls
+      - /opt/check
+      error_regexp: No such file
+  runner:
+    rps:
+      rps: {{ concurrency if not super_light else super_light_concurrency }}
+      times: {{ compute * 2 if not super_light else super_light_count * 2 }}
+  contexts:
+    namespaces:
+      count: 3
+      with_serviceaccount: true
+      serviceaccount_delay: 5
+    local_storageclass: {}
+    kubernetes.cfg:
+      prepoll_delay: 1
+      retries_total: 300
+      sleep_time: 1
