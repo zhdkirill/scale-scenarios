@@ -1,7 +1,7 @@
 ---
   # openstack/kubernetes
-  concurrency: 5
-  compute: 25
+  concurrency: 10
+  compute: 30
   gre_enabled: true
   super_light: false
   super_light_count: 20
