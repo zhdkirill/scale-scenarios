@@ -1,0 +1,549 @@
+subtasks:
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 20
+      times: 2000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 30
+      times: 3000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 40
+      times: 4000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 50
+      times: 5000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 60
+      times: 6000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 70
+      times: 7000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 80
+      times: 8000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 90
+      times: 9000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 100
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 120
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 140
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 160
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 180
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 200
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 225
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 250
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 275
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 300
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 350
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 400
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 450
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 500
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 550
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 600
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 650
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 700
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 750
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 800
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 850
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 900
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 950
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1000
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1100
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1200
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1300
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1400
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1500
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1600
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1700
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1800
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 1900
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+- contexts:
+    namespaces:
+      count: 3
+      serviceaccount_delay: 5
+      with_serviceaccount: true
+  runner:
+    rps:
+      rps: 2000
+      times: 10000
+  scenario:
+    Kubernetes.create_and_delete_pod:
+      image: mirantis.azurecr.io/lcm/docker/ucp-pause:3.5.7
+  title: Run create/read/delete pod with rps runner
+title: Create, read and delete pod with random name
+version: 2
